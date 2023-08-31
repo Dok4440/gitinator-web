@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gitinator - PGP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>gitinator.hopto.org, www.gitinator.me (no SSL)</h1>
+    <p>
+        This is my personal key, use it to encrypt messages or files.
+    </p>
+    <p>
+        Use the buttons below to copy or show the PGP key.
+    </p>
+</header>
+
+<div id="pgp-div">
+    <button onclick="copyKey()" class="pgp-buttons">
+        Copy public key
+    </button>
+    <button onclick="toggleKeyVisibility()" class="pgp-buttons">
+        Show full key
+    </button>
+    <p>
+        <label id="copy-feedback"></label> <!-- Empty label for feedback -->
+    </p>
+
+    <pre id="pgp-public-key">
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    mQINBGToleQBEAC3xYRvg4Or6vw5RSjtBvvXZ41KBdgUfaWuKaoIPjIwboJ/pElK
+    VK5GZZG3z+191OhCcpHlWUKfHl/KDjf1XaIMVAgUfftwMKeZUnRkXeMtWdBfGqtL
+    QOrEuZeFo70mbole7Kh+3m5KndsGQo2hJH2Y7bph2TYWrNPSFZEjnErPXqGcNhKy
+    82RVXFhF8uhgAyebEyslR7E6Hqn7F6uYTL+9PMEnqDXhzhlmfYfzXhMK4E2qxY04
+    cAHFU25YrVkzh4+tBBFeT7lkQbPpCSrrP6jcJShw7AfKz6itJtvDioom3P8y9iok
+    K3ToP+n49lLGP+cyy94qff3PI+RHmv5O1KNDgADffLIIXel8pFrLjDoCYdOnd35E
+    R8hto/12kMPtCdqLeL0LVQPhA0haNzeTbt5pf5oRbNr9tS1yYzjKzOMlqcmrOBFA
+    x5hdpdel/m6TnbNfZJ7BNIoaM7PFt+1M/Og1KF6td5lyFWePhayMeXdUh8vaA4PN
+    8Fq2vqmi7PBEP9jecrFCetLN9oiTc1w26dxVWnfKJGaTkcb6zIz+i4w+eliOh/Kn
+    zFUlxjTK1y+oRy9KDXFAZI5v+T+/wF3yc/Dir82cn6t+ivgoQgkl895t+hcVMz9D
+    sjoZCMwU4S7/amdTo2aXGBaWyZRvPEFtl0YPsZEoyTzgDf5YDpNRbTFv/wARAQAB
+    tCNXYXJsb2NrSW5hdG9yIDx3bC5pbmF0b3JAcHJvdG9uLm1lPokCTgQTAQgAOBYh
+    BMQ/kg+0jEKAio0uJ60Ya15bvwfbBQJk6JXkAhsvBQsJCAcCBhUKCQgLAgQWAgMB
+    Ah4BAheAAAoJEK0Ya15bvwfbFA4QAIYldYdxqzlxhn45UkWjp56gudve3FuwlKDz
+    P24MWpHYYOIbIcyL61KkVYv8TRZL6fm1CQr4ETlQ4wQllcizNtArw3J/5OhpEmnu
+    jTS47ZfDRehSsWe+FI82ZrFBzizNpUwvqt7RdoXJ+PTTO8EQNh4Yahrn9cy/A5Pf
+    T+JNYWRnkdTzJp4xIZfETFtmgUSwwacRVDKnyYHZmwrkPFGNpnnO5q9p39I6rzbC
+    QkVWYmrzAOK6ODlg4p7UfY6s5lzDsFvaXaTqLBCDsB32hBpnlLQbfuh9ExmflS9E
+    dWPsRCndztYdsp3hnFUOxMYGr7yWIV7MAT9JJHquwC7vf8bSI+Yw3+w7ZXbbmT6/
+    NOuTvr8fYcAMIWR4+hgbsXspBTi3NbZr8i8mNwh8OcKRADyjXWrovIMXtI35reVo
+    CAje+rpO7/uPV9RjBg98S/MQV0pgo8N9qCcWOSG66sJ2nG1LsgyRyJJqweSMMRae
+    8ls9knD1fHctiSJSzqEDBMAtcmGcbIil97za9UhppzbuPZWBxw19paZfWZ+o8h1n
+    32LxvRvdK2uZJDN5Y3i5OWJpQh3+C7cAvzmKUR60Peu17rwPca8zcMd817wyUb28
+    3kZ6n6y2qb3cCKQ7zUceUivq9tHfUrWHM1CGFFGhLy2vSSYbbWL+KzsJmmVn7U2S
+    yewaoU3+uQINBGToleQBEADMoLqYpF4Oj4EWVkd/8TmZMUChYwKQGfj9i04qkwnm
+    +/xNODfiTsF/9Wgo6Vhw4hyRDGxsL0P3S4rm0x/7kKiWk0dUpcOVYamFCc2hdkSX
+    ZiTAvAxANkLvf+BunytA28cqoNWT77dBs/tiaoHkF+sX9rTDMwduluJs6zDQ5ar1
+    tKpEjS3xqdFAygfmwJWF/xVOhGtkVNwvObVHepda5Mr0LwT/Qn3Qfezwq4XHEiL9
+    Zy9MfmJNVCeBRjKhKwX3hDzAEpaEjKGdw/eWU4Yg+suqElQbXZoD2MxJV8e//UV8
+    FYXUrCKrcp//r6VqmxqSJMCOmCDvmc2XeegPor9c2bV3/Ax4q6XY3T5HRwoxS3ao
+    GzE7v9A7W1NssScShwpeW1Vl+mjBQT5oA3t1gO70j31OehXEylRVTQrAP3GfAdDK
+    TCfX+MWtrQ0m7JHlZtwZshziuLnRnY1kIbkEZPYdaOxsImjXYPntfxW8TeUTn1m9
+    j3/WqCcZ3Jqh2ladprAUkJFG8GC8uv7db3AVsx/BwZAzidPbLg0kljyLPp1UcCd4
+    TyNNl3w0l5LR4+C5pDsDC8ScW+noDTeF5XpSop3JFUuuF5t5qAx0VIv1WYVf6G9d
+    Uzb6yF24TEdSNv/JaT1yVp3Zm1e6rB5XWffa6y+U5bzP90CBUdV6Bigg1/8dV6Ck
+    pwARAQABiQRsBBgBCAAgFiEExD+SD7SMQoCKjS4nrRhrXlu/B9sFAmToleQCGy4C
+    QAkQrRhrXlu/B9vBdCAEGQEIAB0WIQS71iIOXobykZ9VNAT7NqP2Fc1D8QUCZOiV
+    5AAKCRD7NqP2Fc1D8bgaEADD4PYYOm6tkHnbcaW8XlV6slNLnJVchUAjkQWOJnMX
+    uyk/qE3OowC4IumAM4Cc1C6PilbVdRNpDudHjpwqWApQLBQgOfIp1i2pHbVpdZ7Z
+    TzPDyWG+FSIl6qpxFCjiSQ6DLB3PJHPHHaZUEB9Co/4eoP1HvhX0PcVeEBFXqxna
+    1g0a7WyB4/xdMwBd5FRuNTziYJEBlHueza2zmunW7yJdKgtBOcnexloyVPnKS+LT
+    CcHNJQ2UldThjWm0yADV5slv5AKM6ir0l92BOMvM4DTlaEBAAqIqyiDP1HyMfO9a
+    l113cyX7DZzzH9hVi/Y9WyOCQrHVShK0ZFuiVuPkHSBi6HYQKYmBlxntf1MSC1Cy
+    +sAOvXG+e94Wwn9IbHGYdcJXZuCAvc1VAyTFGwZ9TSWcTFz0AeFK/N0qc/OxC2of
+    AF5HOtt5C92XRJgFKuH6AT2fUBZbATb9lnFLpAvfQ1y6Xg+/CkUwLkPAbDPzKFYW
+    9oTjVLUMNexz7vMlUoeXXugEk4V8R5pdOUz6na09Q7wUcgenDbEJ+9WogxaT/s5f
+    bdrbsEK7bWmrITHh61OKAVjjNczuydmY9vWicwBNMUQodYCjtl4aTmBXBlYb2s9m
+    j+xobbBarRathEMDYBvNvdY+unl1gbQWlF6juok6icHNRhDdalgAQhIGne/0JWUJ
+    NHBqD/9ZYgjXJ91nYu19TeviHsecghYjcdraEhWIRXys4oCOehB5mkljdN2NK9Ur
+    XPLjydeh6uIC5M9v9goVX04VRkMzfG3yCP635eS2TKhMZs+05q8CtSTRoufsJMGw
+    zW/bVpz5Y7qMJZuNTgv/AHZVm716LfgwfnNuvOJZg7gaXMDpxWS+X+1snPLdhpMf
+    iV/e3V75uFKTm8am1cpSmVLPrn/+hATuu6JnyVZRlyjmSsFB1HBC7TZVfZ9gnGg9
+    6s4mylOeg2spqwMRxUr/rFlanLvHmc/KJUgh6oer/BRQGvJs3gjod5tA7sIuHaM7
+    bpQXJ+vm966YgmeqC8kL8dveITta+B9vbS8mFM3SKVhYW3m1G1E121WnX2WE22If
+    8Z01qq5GZFIphi1231zZMikcC5DpYjGi5zffmjZNf3446kHzD5vAPKBvVRQWgWMR
+    ZOxROE98HX8I/u8AKvNmDA708CZACWyxreDE0Qoej5b1PchBD6Y0u5+Zo/2b68A7
+    NAGIZyS/Ftl9dUakV8KtkC0W2EreNfEgXi0WBBMbJn17orJniDVGVO/vl4TrkF1N
+    il3/jcNoyy2Oe0V3PCVZ1rU3Y7TtWnwSGR4as4pdJRG2yKsyrmYNXCPfdJ55AnY5
+    vXCk0PeBS16ThfW9lu4+m+khO70LNilsOHVHwtfQ/tWj6lHrdQ==
+    =T88C
+    -----END PGP PUBLIC KEY BLOCK-----
+</pre>
+</div>
+
+<script>
+    var isKeyVisible = false; // To keep track of the key visibility
+
+    function copyKey() {
+        // Get the pre element containing the public key
+        var publicKeyElement = document.getElementById("pgp-public-key");
+
+        // Create a textarea element to hold the text temporarily
+        var tempTextarea = document.createElement("textarea");
+        tempTextarea.value = publicKeyElement.textContent;
+
+        // Append the textarea to the document and select its content
+        document.body.appendChild(tempTextarea);
+        tempTextarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempTextarea);
+
+        // Update the feedback label
+        var feedbackLabel = document.getElementById("copy-feedback");
+        feedbackLabel.textContent = "Public key copied!";
+    }
+
+    function toggleKeyVisibility() {
+        var publicKeyElement = document.getElementById("pgp-public-key");
+        var showKeyButton = document.querySelector("#pgp-div button:nth-child(2)");
+
+        if (isKeyVisible) {
+            publicKeyElement.style.display = "none";
+            showKeyButton.textContent = "Show full key";
+        } else {
+            publicKeyElement.style.display = "block";
+            showKeyButton.textContent = "Hide full key";
+        }
+
+        isKeyVisible = !isKeyVisible; // Toggle the visibility flag
+    }
+</script>
+</body>
+</html>

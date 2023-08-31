@@ -1,0 +1,136 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: black;
+    /*background-image: url("img/stars2.jpg");*/
+    /*background-size: contain;*/
+    margin: 0;
+    padding: 0;
+    color: #B5A9D6;
+    position: relative;
+    font-size: 1.2em;
+}
+
+header {
+    /*background-color: #333;*/
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.buttons {
+    /*!*list-style: none;*!*/
+    padding: 0;
+    /*!*display: flex;*!*/
+    /*!*flex-direction: column;*!*/
+    /*align-items: center;*/
+    /*margin-top: 20px;*/
+}
+
+.buttons li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.buttons li a {
+    display: flex;
+    padding: 20px 30px;
+    background-color: #B5A9D6;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000B3;
+    transition: transform 0.2s ease;
+}
+
+.buttons li a:hover {
+    transform: scale(1.03);
+}
+
+.buttons .charity-button a {
+    background-color: #00B2FF;
+    color: black;
+}
+
+.buttons .charity-button i {
+    color: #FF0000;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+.fa-brands, .fa-solid, .fa-sharp {
+    font-size: 24px;
+    margin-left: auto;
+}
+
+p {
+    margin: 10px;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+p:last-child {
+    margin-bottom: 20px;
+}
+
+#pgp-div {
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+.pgp-buttons {
+    font-size: 1.2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    padding: 20px 30px;
+    background-color: #B5A9D6;
+    color: #000000B3;
+    transition: transform 0.2s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.pgp-buttons:hover {
+    transform: scale(1.03);
+}
+
+#pgp-public-key {
+    display: none;
+}
+
+/* Responsive button width */
+@media (min-width: 1200px) {
+    .buttons li a {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .buttons li a {
+        width: 65%;
+    }
+}
+
+@media (max-width: 767px) {
+    .buttons li a {
+        width: 80%;
+    }
+}
