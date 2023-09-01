@@ -8,7 +8,8 @@ fetch('/get-git-info') // Endpoint to your server-side script
     .then(data => {
         if (data) {
             const {repository, branch, commit} = data;
-            gitInfoElement.textContent = `${repository} | Branch: ${branch} | Commit: ${commit}`;
+            // gitInfoElement.textContent = `${repository} | Branch: ${branch} | Commit: ${commit}`;
+            gitInfoElement.textContent = `${branch} | ${commit}`;
         } else {
             gitInfoElement.textContent = 'Git info unavailable';
         }

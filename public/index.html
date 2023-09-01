@@ -5,101 +5,94 @@
     <title>gitinator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-<header>
-    <h1>gitinator.hopto.org, www.gitinator.me (no SSL)</h1>
-    <p>
-        This site serves as a personal git server and way to share reference links of FAQ.
-    </p>
-    <p>
-        To keep you safe, you cannot create an account on the git server, do not enter personal data anywhere.
-    </p>
-    <p>
-        If you come from Qt5 (Arch), contact me on Discord or email me. Encryption keys are available
-        below.
-    </p>
+<header class="bg-light py-3 text-center">
+    <div class="container">
+        <h2>gitinator.hopto.org, www.gitinator.me</h2>
+        <p class="lead">
+            Proper styling is coming soon. Maybe. Probably not.
+        </p>
+        <p>
+            To keep you safe, you cannot create an account on the git server, do not enter personal data anywhere.
+        </p>
+        <p>
+            If you come from Qt5 (Arch), contact me on Discord or email me. Encryption keys are available
+            below.
+        </p>
+    </div>
 </header>
 
-<ul class="buttons">
-    <li>
-        <a href="https://github.com/Dok4440/dotfiles">
-            <span class="label">Arch dotfiles (i3-wm)</span>
-            <i class="fa-brands fa-linux"></i>
-        </a>
+<div class="container py-5 buttons">
+    <ul class="list-unstyled">
+        <li class="mb-3">
+            <a href="https://github.com/Dok4440/dotfiles" class="btn">
+                <i class="fab fa-linux mr-2"></i> Arch dotfiles (i3-wm)
+            </a>
+        </li>
+        <li class="mb-3">
+            <a href="pgp.html" class="btn">
+                <i class="fas fa-key mr-2"></i> Encryption key (PGP)
+            </a>
+        </li>
+        <li class="mb-3">
+            <a href="mailto:wl.inator@proton.me" class="btn">
+                <i class="fas fa-envelope mr-2"></i> wl.inator@proton.me
+            </a>
+        </li>
+        <li class="mb-3">
+            <a href="https://www.pcrf.net/" class="btn">
+                <i class="fas fa-hand-holding-heart mr-2"></i> Palestine Children's Relief Fund
+            </a>
+        </li>
+        <li class="mb-3">
+            <a href="https://gitlab.com/tessinator/racu" class="btn">
+                <i class="fab fa-gitlab mr-2"></i> Rave Cave Utilities (Racu)
+            </a>
+        </li>
+        <li class="mb-3">
+            <a href="https://github.com/Dok4440/TCUBetaBot" class="btn">
+                <i class="fab fa-github mr-2"></i> TCU Beta Bot (discontinued)
+            </a>
+        </li>
+        <li class="mb-3">
+            <a href="https://github.com/Dok4440/ps1_bashrc" class="btn">
+                <i class="fas fa-code-branch mr-2"></i> A pretty cool ~/.bashrc
+            </a>
+        </li>
+        <li class="mb-3">
+            <a href="https://github.com/erebe/greenclip" class="btn">
+                <i class="fas fa-clipboard mr-2"></i> Only clipboard you'll ever need
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/koalaman/shellcheck" class="btn">
+                <i class="fas fa-check mr-2"></i> Shellcheck (bash/sh)
+            </a>
+        </li>
+    </ul>
+    <p class="mt-3">* If any links are dead, please let me know via email.</p>
+</div>
 
-    </li>
-    <li>
-        <a href="pgp.html">
-            <span class="label">Encryption key (PGP)</span>
-            <i class="fa-solid fa-key"></i>
-        </a>
-
-    </li>
-    <li>
-        <a href="mailto:wl.inator@proton.me">
-            <span class="label">wl.inator@proton.me</span>
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-    </li>
-    <li class="charity-button">
-        <a href="https://www.pcrf.net/">
-            <span class="label">Palestine Children's Relief Fund</span>
-            <i class="fa-solid fa-hand-holding-heart"></i>
-        </a>
-
-    </li>
-    <li>
-        <a href="https://gitlab.com/tessinator/racu">
-            <span class="label">Rave Cave Utilities (Racu)</span>
-            <i class="fa-brands fa-gitlab"></i>
-        </a>
-    </li>
-    <li>
-        <a href="https://github.com/Dok4440/TCUBetaBot">
-            <span class="label">TCU Beta Bot (discontinued)</span>
-            <i class="fa-brands fa-github"></i>
-        </a>
-
-    </li>
-    <li>
-        <a href="https://github.com/Dok4440/ps1_bashrc">
-            <span class="label">A pretty cool ~/.bashrc</span>
-            <i class="fa-solid fa-code-branch"></i>
-        </a>
-
-    </li>
-    <li>
-        <a href="https://github.com/erebe/greenclip">
-            <span class="label">Only clipboard you'll ever need</span>
-            <i class="fa-solid fa-clipboard"></i>
-        </a>
-
-    </li>
-    <li>
-        <a href="https://github.com/koalaman/shellcheck">
-            <span class="label">Shellcheck (bash/sh)</span>
-            <i class="fa-solid fa-check"></i>
-        </a>
-
-    </li>
-</ul>
-<p>* If any links are dead, please let me know via email.</p>
-
-<footer>
-    <div class="left">
-        <span id="git-info">Loading Git info...</span>
-    </div>
-    <div class="center">
-        <span>&copy; wl.inator</span>
-    </div>
-    <div class="right">
-        <span><a href="mailto:wl.inator@proton.me">w.inator@proton.me</a></span>
+<footer class="bg-dark text-white py-3">
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-4">
+                <span>&copy; 2023 wl.inator</span>
+            </div>
+            <div class="col-8 text-right">
+                <a href="https://github.com/Dok4440/gitinator-web" class="text-white">
+                    gitinator-web</a> | <span id="git-info">Loading Git info...</span>
+            </div>
+        </div>
     </div>
 </footer>
 
-<script src="js/footer.js"></script>
+
+<!-- Include Bootstrap JS (optional) -->
+<script src="js/git-client.js"></script>
 </body>
 </html>

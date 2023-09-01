@@ -3,21 +3,20 @@
 
 body {
     font-family: 'Inter', Arial, sans-serif;
-    background-color: black;
+    /*background-color: black;*/
     /*background-image: url("img/stars2.jpg");*/
     /*background-size: contain;*/
     margin: 0;
     padding: 0;
-    color: #B5A9D6;
+    /*color: #B5A9D6;*/
     position: relative;
-    font-size: 1.2em;
+    max-width: 100%;
 }
 
 header {
     /*background-color: #333;*/
     text-align: center;
     padding: 20px;
-    font-weight: bold;
 }
 
 header h1 {
@@ -34,23 +33,24 @@ header h1 {
 }
 
 .buttons li {
-    margin: 15px 0;
+    /*margin: 15px 0;*/
     display: flex;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*align-items: center;*/
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
     justify-content: center;
-    transition: transform 0.2s ease;
+    /*transition: transform 0.2s ease;*/
 }
 
 .buttons li a {
     display: flex;
-    padding: 20px 30px;
-    background-color: #B5A9D6;
+    /*padding: 10px 20px;*/
+    /*background-color: #B5A9D6;*/
     align-items: center;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #000000B3;
+    /*border-radius: 10px;*/
+    /*text-decoration: none;*/
+    /*color: #000000B3;*/
     transition: transform 0.2s ease;
+    border: 1px solid black;
 }
 
 .buttons li a:hover {
@@ -58,12 +58,12 @@ header h1 {
 }
 
 .buttons .charity-button a {
-    background-color: #00B2FF;
-    color: black;
+    /*background-color: #00B2FF;*/
+    /*color: black;*/
 }
 
 .buttons .charity-button i {
-    color: #FF0000;
+    /*color: #FF0000;*/
 }
 
 .label {
@@ -91,7 +91,7 @@ p:last-child {
 }
 
 #pgp-div {
-    color: white;
+    color: black;
     text-align: center;
     padding: 0;
 }
@@ -118,19 +118,31 @@ p:last-child {
 
 /* Responsive button width */
 @media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+
     .buttons li a {
         width: 30%;
     }
 }
 
 @media (max-width: 1199px) and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
     .buttons li a {
         width: 65%;
     }
 }
 
 @media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
     .buttons li a {
-        width: 80%;
+        width: 95%;
     }
 }
