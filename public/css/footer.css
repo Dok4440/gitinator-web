@@ -1,0 +1,27 @@
+/* styles.css */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+footer .left {
+    text-align: left;
+}
+
+footer .center {
+    text-align: center;
+}
+
+footer .right {
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
