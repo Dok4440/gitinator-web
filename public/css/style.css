@@ -57,13 +57,13 @@ header h1 {
     transform: scale(1.03);
 }
 
-.buttons .charity-button a {
-    /*background-color: #00B2FF;*/
-    /*color: black;*/
+.buttons .charity-button {
+    background-color: #00B2FF;
+    color: black;
 }
 
 .buttons .charity-button i {
-    /*color: #FF0000;*/
+    color: #FF0000;
 }
 
 .label {
@@ -88,32 +88,6 @@ hr {
 
 p:last-child {
     margin-bottom: 20px;
-}
-
-#pgp-div {
-    color: black;
-    text-align: center;
-    padding: 0;
-}
-
-.pgp-buttons {
-    font-size: 1.2em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 30px 0;
-    padding: 20px 30px;
-    background-color: #B5A9D6;
-    color: #000000B3;
-    transition: transform 0.2s ease;
-    border: none;
-    border-radius: 10px;
-}
-
-.pgp-buttons:hover {
-    transform: scale(1.03);
-}
-
-#pgp-public-key {
-    display: none;
 }
 
 /* Responsive button width */
