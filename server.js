@@ -9,24 +9,24 @@ const port = 3000;
 
 // Middleware to log visitor information
 app.use((req, res, next) => {
-    // Get client information
-    const clientInfo = {
-        ipAddress: req.ip, // Get the IP address of the client
-        userAgent: req.headers['user-agent'], // Get the User-Agent header
-        timestamp: new Date().toISOString(), // Get the current timestamp
-        method: req.method, // Get the HTTP request method (GET, POST, etc.)
-        path: req.path, // Get the requested path
-    };
+  // Get client information
+  const clientInfo = {
+    ipAddress: req.headers['x-forwarded-for'] || req.connection.remoteAddress, // Get the IP address of the client
+    userAgent: req.headers['user-agent'], // Get the User-Agent header
+    timestamp: new Date().toISOString(), // Get the current timestamp
+    method: req.method, // Get the HTTP request method (GET, POST, etc.)
+    path: req.path, // Get the requested path
+  };
 
-    // Log client information to a file (you can customize the log format)
-    const logMessage = JSON.stringify(clientInfo);
-    fs.appendFile('access.log', logMessage + '\n', (err) => {
-        if (err) {
-            console.error('Error writing to access.log:', err);
-        }
-    });
+  // Log client information to a file (you can customize the log format)
+  const logMessage = JSON.stringify(clientInfo);
+  fs.appendFile('access.log', logMessage + '\n', (err) => {
+    if (err) {
+      console.error('Error writing to access.log:', err);
+    }
+  });
 
-    next();
+  next();
 });
 
 app.get('/pgp', (req, res) => {
