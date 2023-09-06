@@ -1,24 +1,30 @@
 // server.js
 
 const express = require('express');
+const fs = require('fs');
 const getGitInfo = require('./git-info.js');
 
 const app = express();
 const port = 3000;
 
-
-// Middleware to check for HTTP requests and WWW subdomain
+// Middleware to log visitor information
 app.use((req, res, next) => {
-    if (req.protocol === 'http') {
-        // Redirect HTTP to HTTPS
-        return res.redirect(`https://${req.hostname}${req.url}`);
-    }
+    // Get client information
+    const clientInfo = {
+        ipAddress: req.ip, // Get the IP address of the client
+        userAgent: req.headers['user-agent'], // Get the User-Agent header
+        timestamp: new Date().toISOString(), // Get the current timestamp
+        method: req.method, // Get the HTTP request method (GET, POST, etc.)
+        path: req.path, // Get the requested path
+    };
 
-    if (req.hostname.startsWith('www.')) {
-        // Redirect WWW to non-WWW
-        const newHostname = req.hostname.slice(4); // Remove 'www.' prefix
-        return res.redirect(`https://${newHostname}${req.url}`);
-    }
+    // Log client information to a file (you can customize the log format)
+    const logMessage = JSON.stringify(clientInfo);
+    fs.appendFile('access.log', logMessage + '\n', (err) => {
+        if (err) {
+            console.error('Error writing to access.log:', err);
+        }
+    });
 
     next();
 });
